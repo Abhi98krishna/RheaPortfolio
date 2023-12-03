@@ -5,6 +5,11 @@ html, body {
 	background-color:var(--BgColor);
 }
 
+a {
+	text-decoration: none;
+	color: inherit ;
+}
+
 :root {
   --BgColor: #3D3D3D;
   --MyBlue: #72B3FF;
