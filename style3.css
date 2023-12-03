@@ -1,0 +1,183 @@
+html, body {
+	margin: 0;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	background-color:var(--BgColor);
+}
+
+:root {
+  --BgColor: #3D3D3D;
+  --MyBlue: #72B3FF;
+  --isitgrey: #717171;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.MainScreen {
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--BgColor);
+	color: var(--MyBlue);
+	align-items: center;
+}
+
+
+.HeaderImage {
+	display: flex;
+	flex-flow: row;
+	background: linear-gradient(91deg, #5666F5 23.86%, #DD5777 84.52%);
+	width: 100wv;
+	height: 20vh;
+	color: white;
+	font-family: Buenard;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 400;
+	align-items: flex-end;
+	padding-left: 10vw;
+	padding-bottom: 5vh;
+}
+
+.MainContainer{
+	width: 100vw;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 0px
+}
+
+.NavBarContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	width: 80vw;
+	height: 30vh;
+}
+
+.NavBarItem {
+	flex-grow: 1;
+/*	align-items: center;*/
+	align-content: center;
+	text-align: center;
+	font-family: Buenard;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 100;
+	line-height: normal;
+	color: #DCDCDC;
+}
+
+.TitleContainer {
+	width: 80vw;
+	overflow-x: hidden;
+	background: linear-gradient(#8591fa 30vh, transparent 50px);
+	background-repeat: no-repeat;
+	color: white;
+	font-family: Raleway;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	height: 30vh;
+}
+
+.ProjectsContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	width: 80vw;
+	margin-top: -12vh;
+	padding-left: 0px;
+	margin-bottom: 20vh;
+/*	Adjust padding acc to image dimensions*/
+}
+
+.ProjectsColumn {
+	width: 25vw;
+	overflow-x: hidden;
+	margin-right: 1.25vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	gap: 1.25vw;
+}
+
+.ProjectsColumn:first-child {
+	margin-left: 1.25vw;
+}
+
+
+.ProjectTitleDiv {
+	width: 100%;
+	text-align: center;
+	font-family: Inter;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	color: white;
+	margin-bottom: 150px;
+}
+
+.GalleryGridHolder{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 76vw;
+	background-color: #c2c2c2;
+	margin-top: -12vh;
+	margin-bottom: 20vh;
+}
+
+.GalleryRow {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 1vw;
+}
+
+.GalleryItem {
+	grid: 1;
+	width: 100%;
+	height: auto;
+}
+
+.GalleryItem img { 
+	width: 100%;
+	height: auto;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

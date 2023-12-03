@@ -1,0 +1,136 @@
+html, body {
+	margin: 0;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	background-color:var(--BgColor);
+}
+
+:root {
+  --BgColor: #3D3D3D;
+  --MyBlue: #72B3FF;
+  --isitgrey: #717171;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.MainScreen {
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--BgColor);
+	color: var(--MyBlue);
+	align-items: center;
+}
+
+
+.HeaderImage {
+	background: linear-gradient(91deg, #5666F5 23.86%, #DD5777 84.52%);
+	width: 100wv;
+	height: 150px;
+}
+
+.MainContainer{
+	width: 100vw;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.NavBarContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	width: 80vw;
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+.NavBarItem {
+	flex-grow: 1;
+/*	align-items: center;*/
+	align-content: center;
+	text-align: center;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 200;
+	line-height: normal;
+	color: var(--MyBlue);
+}
+
+.ProjectsContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	width: 80vw;
+	background: linear-gradient(180deg, #4154FF 0%, rgba(200, 84, 255, 0.00) 100%);
+	background-size: auto 25%;
+	background-repeat: no-repeat;
+	padding-top: 200px;
+/*	Adjust padding acc to image dimensions*/
+}
+
+.ProjectsColumn {
+	width: 25vw;
+	overflow-x: hidden;
+	margin-right: 2.5vw;
+/*	background-color: lightblue;*/
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	gap: 40px;
+	min-height: 100%;
+/*	height: 1000px;*/
+}
+
+.ProjectsColumn:last-child {
+  margin-right: 0;
+}
+
+.ProjectTitleDiv {
+	width: 100%;
+	text-align: center;
+	font-family: Inter;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	color: white;
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
