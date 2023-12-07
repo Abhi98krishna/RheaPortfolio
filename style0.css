@@ -1,0 +1,236 @@
+html, body {
+	margin: 0;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	background-color:var(--BgColor);
+}
+
+a {
+	text-decoration: none;
+	color: inherit ;
+}
+
+:root {
+  --BgColor: #1D1D1D;
+  --MyBlue: #72B3FF;
+  --isitgrey: #717171;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.MainScreen {
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--BgColor);
+	color: var(--MyBlue);
+	align-items: center;
+}
+
+
+.HeaderImage {
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row;
+	background: #5666F5;
+	width: 100wv;
+	height: 20vh;
+	color: white;
+	font-family: Buenard;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 400;
+	align-items: flex-end;
+	padding-left: 10vw;
+	padding-bottom: 5vh;
+}
+
+.MainContainer{
+	width: 100vw;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 0px
+}
+
+.NavBarContainer {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 14vw;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 80vw;
+	height: 10vh;
+	margin-bottom: 2vh;
+}
+
+.NavBarItem {
+	align-content: center;
+	text-align: center;
+	font-family: Inter;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	color: #F7F7F7;
+}
+
+.TitleContainer {
+	box-sizing: border-box;
+	width: 80vw;
+	overflow-x: hidden;
+	background: #5666F5;
+	background-repeat: no-repeat;
+	color: #5666F5;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	height: 18vh;
+	padding-left: 2.5vw;
+	padding-top: 7vh;
+
+}
+
+.TitleNameContainer {
+	width: 24vw;
+	box-sizing: border-box;
+	background-color: #F8F8F8;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	justify-content: left;
+	border-radius: 10px;
+}
+
+.ProjectsContainer {
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 80vw;
+	margin-top: 3vh;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+	margin-bottom: 10vh;
+	gap: 1.5vw;
+/*	Adjust padding acc to image dimensions*/
+}
+
+.ProjectsColumn {
+	overflow-x: hidden;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	gap: 1.5vw;
+}
+
+
+.ProjectTitleDiv {
+	width: 100%;
+	text-align: center;
+	font-family: Inter;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	color: white;
+	margin-bottom: 150px;
+}
+
+.IllustrationContainer {
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 60vw;
+	margin-top: -3vh;
+	margin-bottom: 10vh;
+	gap: 1.5vw;
+}
+
+.IllustrationColumn {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	gap: 1.5vw;
+}
+
+.BiggerColumn{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	gap: 1.5vw;
+	margin-top: -4.5vh;
+}
+
+.BiggerColumnItem{
+	width: %;
+	height: auto;
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+	flex-direction: column-reverse;
+	gap: 1.5vw;
+}
+
+.GalleryGridHolder{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 76vw;
+	background-color: #c2c2c2;
+/*	margin-top: -12vh;*/
+	margin-bottom: 20vh;
+}
+
+.GalleryRow {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 1vw;
+}
+
+.GalleryItem {
+	width: 100%;
+	height: auto;
+}
+
+.GalleryItem img { 
+	width: 100%;
+	height: auto;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
