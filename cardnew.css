@@ -1,0 +1,68 @@
+
+.Card {
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	overflow-x: hidden;
+}
+
+.CardImage {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	object-fit: cover;
+}
+
+.CardInfo {	
+	position: absolute;
+	bottom: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 20px;
+	align-items: center;
+	gap: 10px;
+	border-radius: 15px;
+	background-color: #F7F7F7;
+}
+
+.CardDetails {
+	display: flex;
+	height: auto;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+	align-self: stretch;
+}
+
+.CardTitle {
+	color: #645F4A;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	align-self: stretch;
+}
+
+.CardText {
+	align-self: stretch;
+	color: #2D2D2D;
+	font-family: Inter;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.CardTags {
+	align-self: stretch;
+	color: #2d2d2d;
+	font-family: Inter;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+}
+

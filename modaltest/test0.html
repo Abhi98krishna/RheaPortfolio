@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon"> --> 
+
+		<link rel="stylesheet" href="./modal.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Inconsolata&family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik&display=swap" rel="stylesheet
+		<link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<title>Rhea Rane | Modal</title>
+
+	<!-- <body>
+
+		<button id="openModalBtn">Open Modal</button>
+
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>This is the content of the modal box.</p>
+		  </div>
+		</div>
+
+	</body>
+
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("openModalBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+	</script> -->
+
+	<body>
+		<button data-modal="./modal1.html" class="openModalBtn">Open Modal 1</button>
+<button data-modal="./modal2.html" class="openModalBtn">Open Modal 2</button>
+
+<div id="modalContainer"></div>
+
+
+	</body>
+
+	<script>
+  // Function to load modal content dynamically
+  function loadModalContent(modalUrl) {
+    fetch(modalUrl)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('modalContainer').innerHTML = data;
+      });
+  }
+
+  // Event listener for opening modals
+  document.querySelectorAll('.openModalBtn').forEach(button => {
+    button.addEventListener('click', function() {
+      const modalUrl = this.getAttribute('data-modal');
+      loadModalContent(modalUrl);
+    });
+  });
+</script>
+
+
+	</html>
